@@ -16,6 +16,7 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "dev": "concurrently \"yarn server\" \"cd client && yarn start\"",
+    "deploy": "git push heroku master",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   }
 }
